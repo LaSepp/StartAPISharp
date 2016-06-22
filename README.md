@@ -1,14 +1,14 @@
 # StartAPISharp
 C# Implementation of StartAPI from StartCom - https://startssl.com/StartAPI
 
-# Getting Started
+## Getting Started
 
 To use the API you need:
 * Account on StartSSL
 * StartAPI Certificate and Password
 * StartAPI Token
 
-# Connecting to API
+###### Connecting to API
 
 ```c#
 String certFile = "api-certificate.p12";
@@ -21,7 +21,7 @@ APISession session = new APISession(cert, token, true);
 
 Note: The third parameter "true" in the APISession constructor redirects access to the API testing server
 
-# Example: Requesting all validated Email Adresses
+###### Example: Requesting all validated Email Adresses
 
 ```c#
 ListResponse response = session.QueryValidatedEmails();
